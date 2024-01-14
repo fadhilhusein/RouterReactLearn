@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"> </div>
+    <div class="roots"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="app.js"></script>
+    <script type="text/babel">
+
+        const root = document.querySelector('#root');
+
+
+        // const element = document.createElement('h1');
+        // element.textContent = 'Hello World!'
+        // element.className = 'heading1'
+
+    //     root.appendChild(element);
+    //     // const name = React.createElement('elementName', classname/other, children)
+
+    //     const root = document.querySelector('#root');
+        
+    //     const li = React.createElement('li', {
+    //         children: 'Apple'
+    //     })
+    //     const li2 = React.createElement('li', {
+    //         children: 'Manggo'
+    //     })
+    //     const li3 = React.createElement('li', {
+    //         children: 'Orange'
+    //     })
+
+        // const element = React.createElement('ul', {
+        //     className: 'wow'
+        // }, [li, li2, li3], 'Hello World', 'React', 'JS')
+        
+       
+        
+    //      function caps(text) {
+    //          return text.toUpperCase();
+    //      }
+    //    const name = 'Indonesia';
+    //    const element = <h1>Hello World {caps(name)} {new Date().toLocaleDateString()}</h1>;
+       
+    //    var name = 'Budi'
+    //   const element = <h1 className={name}>Hallo</h1>
+      
+     
+    //      var gambar = "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+    //      const element = <img src={gambar} alt=""/>
+    
+
+    //      function Hallo(props) {
+    //         return <p>Hallo <b>{props.name}</b></p>
+    //      }
+        
+    //      const element = 
+    //      <>
+    //      <Hallo name="Naufal" />      
+    //      </>
+        
+
+    //      function tick(){
+    //     const element =( 
+    //         <div>
+    //             <h1>Jam Sekarang</h1>
+    //             <h1>{new Date().toLocaleTimeString()}</h1>
+    //         </div>
+    //     )
+    //     ReactDOM.render(element, root);
+    //     }
+
+    //     tick();
+    //     setInterval(function(){
+    //         tick();
+    //     }, 1000);
+
+        // function Text(props) {
+        //     return <p>Hallo <b>{props.name}</b></p>
+        // }
+
+        // const element = (
+        //     <>
+        //         <Text name="dodok"/>
+        //     </>
+        //     )
+        
+        // ReactDOM.render(element, root)
+
+        function tick() {
+        const element = (
+            <div>
+                <h1>Jam Sekarang</h1>
+                <h2>{new Date().toLocaleTimeString()}</h2>
+            </div>
+        )
+            ReactDOM.render(element,root)
+        }
+
+        tick();
+        setInterval(function() {
+            tick();
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
